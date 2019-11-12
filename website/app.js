@@ -1,4 +1,4 @@
-// Personal API Key for OpenWeatherMap API
+// Personal API Key and URL for OpenWeatherMap API
 const apiKey = '739069c10a4e03a904d4b079cb4afbd3';
 const weatherURL = 'http://api.openweathermap.org/data/2.5/weather';
 

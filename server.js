@@ -22,6 +22,7 @@ app.use(cors());
 // Initialize the main project folder
 app.use(express.static('website'));
 
+// Initialize all route with a callback function
 const getProjectData = (req, res) => {
   res.send(projectData);
 };
@@ -38,6 +39,7 @@ const addProjectData = (req, res) => {
 
 app.get('/all', getProjectData);
 
+// Post Route
 app.post('/add', addProjectData);
 
 // Spin up the server
@@ -51,9 +53,3 @@ const listening = (req, res) => {
 };
 
 const server = app.listen(port, listening);
-
-// Initialize all route with a callback function
-
-// Callback function to complete GET '/all'
-
-// Post Route
